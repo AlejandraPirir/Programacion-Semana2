@@ -1,0 +1,49 @@
+/*
+ * Created by SharpDevelop.
+ * User: Jose Pirir
+ * Date: 01/08/2016
+ * Time: 10:02 a.m.
+ * 
+ */
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace palindrome
+{
+    class palindrome
+    {
+        static void Main(string[] args)
+        {
+       
+            string pal1 = "", pal2 = "";
+            string le = "";
+            int i = 0, tl = 0;
+            Console.Write("Ingrese una palabra: ");
+            pal1 = Console.ReadLine();
+            tl = pal1.Length;
+            for (i = tl - 1; i >= 0; i--)
+            {
+                le = pal1.Substring(i, 1);
+                pal2 = pal2 + le;
+            }
+
+            Console.Write("\nPalabra invertida  : " + pal2);
+            if (pal1.Equals(pal2))
+            {
+                Console.WriteLine("\nComo al invertirlas son iguales por lo tanto es palindrome");
+            }
+            else
+            {
+                Console.WriteLine("\nNo es palindrome");
+            }
+
+
+
+
+            Console.ReadKey();
+
+        }
+    }
+}
