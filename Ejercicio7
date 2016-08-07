@@ -1,0 +1,33 @@
+/*
+ * Created by SharpDevelop.
+ * User: Jose Pirir
+ * Date: 01/08/2016
+ * Time: 12:45 p.m.
+ * 
+ */
+
+using System; 
+
+class Program 
+{ 
+     static void Main(string[] args) 
+     { 
+          Console.Write( "Escriba una frase:" ); 
+          string frase = Console.ReadLine(); 
+          Console.WriteLine( "Cantidad de vocales: {0}", CuentaVocal(frase) ); 
+          Console.Read(); 
+     } 
+
+     static int CuentaVocal(string frase) 
+     { 
+          int contador = 0; 
+          char c; 
+          foreach (char v in frase) 
+          { 
+               c = Char.ToLower(v); 
+               if (c == 'a' || c == 'e' || c == 'i' || c == 'O' || c == 'u') 
+                    contador++; 
+          } 
+          return contador; 
+     } 
+}
