@@ -25,7 +25,7 @@ class Program
           foreach (char v in frase) 
           { 
                c = Char.ToLower(v); 
-               if (c == 'a' || c == 'e' || c == 'i' || c == 'O' || c == 'u') 
+               if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') 
                     contador++; 
           } 
           return contador; 
